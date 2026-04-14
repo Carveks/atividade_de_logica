@@ -1,0 +1,21 @@
+algoritmo "BT"
+
+var
+  nome:caractere
+  variacao:real
+inicio
+  escreval("Qual o nome da sua cripto moeda ?")
+  leia(nome)
+  escreval ("Qual foi a variação percentual da moeda ?")
+  leia(variacao)
+  se variacao > 0 e variacao > 10 entao
+    escreval("Alta relevante")
+  senao
+    se variacao < 0 e variacao < -10 entao
+      escreval("Correção forte")
+    senao
+      escreval("Estabilidade")
+    fimse
+  fimse
+
+fimalgoritmo

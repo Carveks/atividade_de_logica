@@ -1,0 +1,17 @@
+algoritmo "cdb"
+
+var
+  aporte, prazo: inteiro
+inicio
+  escreval("Qual será seu investimento ?")
+  leia(aporte)
+  escreval("Por quantos meses ?")
+  leia(prazo)
+  se prazo >= 13 entao
+    escreval("A taxa de rendimento será de 12%")
+    senao 
+    escreval("A taxa de rendimento será de 8%")
+  
+  fimse
+
+fimalgoritmo

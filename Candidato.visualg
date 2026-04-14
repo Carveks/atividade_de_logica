@@ -1,0 +1,17 @@
+algoritmo "Candidatos"
+
+var
+  idade, projetos: inteiro
+inicio
+  escreval("Qual sua idade ?")
+  leia(idade)
+  escreval("Quantos projetos você tem no GitHub ?")
+  leia(projetos)
+  se idade >= 18 e projetos >= 5 entao
+    escreval("Aprovado")
+  senao
+    escreval("Reprovado")
+  fimse
+
+
+fimalgoritmo

@@ -1,0 +1,22 @@
+algoritmo "Cashback"
+
+var
+  compras, resultado: real
+inicio
+  escreval("Qual o valor de sua compra ?")
+  leia(compras)
+  se compras > 500 entao
+    resultado <- (compras * 10)/100
+    escreval("Seu cashback será de 10%, um valor de " resultado " reais")
+  senao
+    se compras >= 200 e compras < 499 entao
+      resultado <- (compras * 5)/100
+      escreval("Seu cashback será de 5%, um valor de " resultado " reais")
+      senao
+        se compras < 200 entao
+        escreval("Não terá cashback")
+        fimse
+    fimse
+  fimse
+
+fimalgoritmo

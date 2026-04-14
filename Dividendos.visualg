@@ -1,0 +1,20 @@
+algoritmo "Dividendos"
+
+var
+  dy: inteiro
+
+inicio
+  escreval("Digite o valor: ")
+  leia (dy)
+  se dy > 6 entao
+    escreval("Estratégia de renda passiva OK")
+  senao
+    se dy >= 4 e dy <= 6 entao
+      escreval("Atenção rendimento médio")
+    senao
+      se dy < 4 entao
+        escreval("Rendimento baixo")
+      fimse
+    fimse
+  fimse
+fimalgoritmo

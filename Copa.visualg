@@ -1,0 +1,14 @@
+algoritmo "Copa do mundo"
+var
+  valor, resultado: real
+inicio
+  escreval("Quanto você tem em conta ?")
+  leia(valor)
+  resultado <- 25000 - valor
+  se valor < 25000 entao
+    escreval("Faltam " resultado " para você ir")
+  senao
+    escreval ("Partiu America do Norte")
+  fimse
+
+fimalgoritmo

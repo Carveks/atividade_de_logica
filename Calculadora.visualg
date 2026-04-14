@@ -1,0 +1,22 @@
+algoritmo "calculadora"
+
+var
+  valor, taxa, resultado: real
+
+inicio
+  escreval("Digite o valor do produto:")
+  leia(valor)
+  se valor > 50 entao
+    taxa <- valor *(60/100)
+    resultado <- taxa + valor
+    escreval("O valor com impostos é " resultado )
+  senao 
+    se valor < 50 entao
+      taxa <- valor + 17*(17/100)
+      resultado <- taxa + valor
+      escreval("O valor com impostos é " resultado)
+    fimse
+  fimse
+
+
+fimalgoritmo

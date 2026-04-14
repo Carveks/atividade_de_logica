@@ -1,0 +1,23 @@
+algoritmo "netflix"
+
+var
+  telas: inteiro
+
+inicio
+  escreval("Quantas telas você vai usar simultaneamente ?")
+  leia(telas)
+  se telas = 1 entao
+    escreval("Plano Mobile")
+  senao
+    se telas = 2 entao
+      escreval("Plano padrão")
+    senao
+      se telas = 4 entao
+        escreval("Plano premium")
+      senao
+        escreval("Opção inválida")
+      fimse
+    fimse
+  fimse
+
+fimalgoritmo

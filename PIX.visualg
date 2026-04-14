@@ -1,0 +1,24 @@
+algoritmo "PIX"
+
+var
+  ted, saldo, cheque: real
+inicio
+  escreval("Digite o valor de tranferência: ")
+  leia(ted)
+  escreval("Quanto você tem de saldo ? ")
+  leia(saldo)
+  se ted<saldo entao
+    escreval("Transfêrencia realizada")
+  senao
+    escreval("Digite o valor de seu cheque especial: ")
+    leia(cheque)
+    se saldo < cheque entao
+      escreval("Transação via cheque especial")
+    senao
+      escreval("Saldo insuficiente")
+    fimse
+  fimse
+
+
+
+fimalgoritmo

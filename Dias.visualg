@@ -1,0 +1,40 @@
+algoritmo "dias"
+
+var
+  dia: caractere
+
+inicio
+  escreval("Escreva um dia de semana por extenso: ")
+  leia(dia)
+  se dia = "Domingo" entao
+    escreva ("Segunda-feira")
+  senao
+    se dia = "Segunda-Feira" entao
+      escreva ("Terça-feira")
+    senao
+      se dia = "Terça-feira" entao
+        escreva ("Quarta-feira")
+      senao
+        se dia = "Quarta-feira" entao
+          escreva ("Quinta-feira")
+        senao
+          se dia = "Quinta-feira" entao
+            escreva ("Sexta-feira")
+          senao
+            se dia = "Sexta-feira" entao
+              escreva("Sábado")
+            senao
+              se dia = "Sabado" entao
+                escreva ("Domingo")
+              senao
+              fimse
+            fimse
+          fimse
+        fimse
+      fimse
+    fimse
+  fimse
+
+
+
+fimalgoritmo
